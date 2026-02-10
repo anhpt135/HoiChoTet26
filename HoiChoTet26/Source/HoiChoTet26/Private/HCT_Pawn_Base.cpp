@@ -15,6 +15,7 @@ AHCT_Pawn_Base::AHCT_Pawn_Base()
 void AHCT_Pawn_Base::BeginPlay()
 {
 	Super::BeginPlay();
+	UE_LOG(LogTemp, Warning, TEXT("---Pawn Xuat Hien---"));
 	
 }
 

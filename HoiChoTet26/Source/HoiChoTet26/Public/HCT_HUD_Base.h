@@ -13,4 +13,9 @@ UCLASS()
 class HOICHOTET26_API AHCT_HUD_Base : public AHUD
 {
 	GENERATED_BODY()
+public:
+	AHCT_HUD_Base();
+	
+protected:
+	virtual void BeginPlay() override;
 };
