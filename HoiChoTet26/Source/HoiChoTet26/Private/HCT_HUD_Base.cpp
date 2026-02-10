@@ -11,12 +11,12 @@ void AHCT_HUD_Base::BeginPlay()
 	Super::BeginPlay();
 	UE_LOG(LogTemp, Warning, TEXT("---HUD Xuat Hien---"));
 
-	if (MainWidgetClass)
+	if (ClassWidget_CuaTui)
 	{
-		MainWidgetInstance = CreateWidget<UUserWidget>(GetWorld(), MainWidgetClass);
-		if (MainWidgetInstance)
+		BienDiaChi_ClassWidget = CreateWidget<UUserWidget>(GetWorld(), ClassWidget_CuaTui);
+		if (BienDiaChi_ClassWidget)
 		{
-			MainWidgetInstance->AddToViewport();
+			BienDiaChi_ClassWidget->AddToViewport();
 		}
 	}
 }

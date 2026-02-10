@@ -17,9 +17,9 @@ protected:
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "UI")
-	TSubclassOf<UUserWidget> MainWidgetClass;
+	TSubclassOf<UUserWidget> ClassWidget_CuaTui;
 
 private:
 	UPROPERTY()
-	UUserWidget* MainWidgetInstance;
+	UUserWidget* BienDiaChi_ClassWidget;
 };
