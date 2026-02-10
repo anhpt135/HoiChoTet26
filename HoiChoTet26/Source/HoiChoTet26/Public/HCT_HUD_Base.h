@@ -1,14 +1,10 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
+﻿#pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"
+#include "Blueprint/UserWidget.h"
 #include "HCT_HUD_Base.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class HOICHOTET26_API AHCT_HUD_Base : public AHUD
 {
@@ -18,4 +14,12 @@ public:
 	
 protected:
 	virtual void BeginPlay() override;
+
+public:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "UI")
+	TSubclassOf<UUserWidget> MainWidgetClass;
+
+private:
+	UPROPERTY()
+	UUserWidget* MainWidgetInstance;
 };
