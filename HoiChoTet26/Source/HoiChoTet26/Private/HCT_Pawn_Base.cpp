@@ -3,6 +3,7 @@
 
 #include "HoiChoTet26/Public/HCT_Pawn_Base.h"
 
+#include "HoiChoTet26/HoiChoTet26.h"
 
 
 AHCT_Pawn_Base::AHCT_Pawn_Base()
@@ -13,7 +14,7 @@ AHCT_Pawn_Base::AHCT_Pawn_Base()
 void AHCT_Pawn_Base::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Warning, TEXT("---Pawn Xuat Hien---"));
+	UE_LOG(LOG_ANHPT, Warning, TEXT("---Pawn Xuat Hien---"));
 	
 }
 

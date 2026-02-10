@@ -4,3 +4,5 @@
 #include "Modules/ModuleManager.h"
 
 IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, HoiChoTet26, "HoiChoTet26" );
+
+DEFINE_LOG_CATEGORY(LOG_ANHPT);
