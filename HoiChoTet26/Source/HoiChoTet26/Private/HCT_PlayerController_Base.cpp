@@ -68,7 +68,6 @@ void AHCT_PlayerController_Base::Look(const FInputActionValue& Value)
 	{
 		// add yaw and pitch input to controller
 		ControlledPawn->AddControllerYawInput(LookAxisVector.X);
-		// Negate Y to fix inverted look
-		ControlledPawn->AddControllerPitchInput(-LookAxisVector.Y);
+		ControlledPawn->AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
