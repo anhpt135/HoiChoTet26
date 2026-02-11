@@ -1,8 +1,5 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
-
-
+﻿
 #include "HoiChoTet26/Public/HCT_Pawn_Base.h"
-
 #include "HoiChoTet26/HoiChoTet26.h"
 
 
@@ -15,7 +12,7 @@ void AHCT_Pawn_Base::BeginPlay()
 {
 	Super::BeginPlay();
 	UE_LOG(LOG_ANHPT, Warning, TEXT("---Pawn Xuat Hien---"));
-	
+
 }
 
 void AHCT_Pawn_Base::Tick(float DeltaTime)
@@ -27,4 +24,3 @@ void AHCT_Pawn_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
-
